@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { Formio, FormioModule, FormioAppConfig } from '@formio/angular';
-// import premium from '@formio/premium';
-// Formio.use(premium);
 import { FormioGrid } from '@formio/angular/grid';
 import { FormioAuthService, FormioAuthConfig } from '@formio/angular/auth';
 import { FormioResources } from '@formio/angular/resource';
@@ -20,10 +18,7 @@ import { DemographicChangeComponent } from './forms/demographic-change/demograph
 // Make sure we use fontawesome everywhere in Form.io renderers.
 (Formio as any).icons = 'fontawesome';
 
-/**
- * Import the Custom component CheckMatrix.
- */
-// import './components/CheckMatrix';
+
 
 @NgModule({
   declarations: [

@@ -6,6 +6,7 @@ import { SimpleComponent } from './simple/simple.component';
 
 import { FormsComponent } from './forms/forms.component';
 import { FORMS } from './forms.index';
+import { DirectDepositUpdateComponent } from './direct-deposit-update/direct-deposit-update.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { FORMS } from './forms.index';
   declarations: [
 
     SimpleComponent,
-    FormsComponent
+    FormsComponent,
+    DirectDepositUpdateComponent
   ],
   bootstrap: [
     FormsComponent
