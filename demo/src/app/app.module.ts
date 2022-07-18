@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DataComponent } from './data/data.component';
 import { DemographicChangeComponent } from './forms/demographic-change/demographic-change.component';
+import { authRoutes } from './auth/auth.module';
 
 
 // Make sure we use fontawesome everywhere in Form.io renderers.
@@ -35,6 +36,7 @@ import { DemographicChangeComponent } from './forms/demographic-change/demograph
     RouterModule.forRoot([
       {
         path: '',
+        // ngif: auth.authenticated
         component: HomeComponent
       },
       {
