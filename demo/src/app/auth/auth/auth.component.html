@@ -4,7 +4,8 @@
   <div class="col-6 offset-3">
     <div *ngIf="service.authenticated" class="card bg-light p-3 text-center">
       <h5>You are logged in as {{ service.user.data.email }}</h5>
-      <button class="btn btn-primary" (click)="service.logout()"><span class="fa fa-sign-out"></span> Logout</button>
+      <a class="btn btn-primary"  routerLink="/home"><span class="fa-solid fa-house"></span> View Portal</a>
+      <!-- <button class="btn btn-primary" (click)="service.logout()"><span class="fa fa-sign-out"></span> Logout</button> -->
     </div>
     <div *ngIf="!service.authenticated" class="card card-primary panel panel-default">
       <div class="card-header panel-heading">

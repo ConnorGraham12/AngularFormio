@@ -35,13 +35,17 @@ import { authRoutes } from './auth/auth.module';
     FormioGrid,
     RouterModule.forRoot([
       {
+        //Load authentication page before any other elements are seen 
         path: '',
-        // ngif: auth.authenticated
-        component: HomeComponent
+        loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
       },
       {
         path: 'data',
         component: DataComponent
+      },
+      {
+        path: 'home',
+        component: HomeComponent
       },
       {
         path: 'forms',
